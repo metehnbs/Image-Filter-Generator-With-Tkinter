@@ -8,4 +8,5 @@ A GUI I created using Tkinter, we can load any image and apply a filter on it in
 
 ## Gif from the save screen
 
-![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/109511544/195848460-a81b0d83-c2c1-4b52-883c-37453809476b.gif)
+![ezgif com-gif-maker (3)](https://user-images.githubusercontent.com/109511544/195889884-dbbbcf5c-cbc1-4911-ac95-1fbfe750bef1.gif)
+
