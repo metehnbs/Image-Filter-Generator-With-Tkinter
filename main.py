@@ -177,36 +177,80 @@ def searchimage():
                 if control == 1:
                         img = Image.open(imgname).convert("L")
                         img.save("C:/Users/Metehan/Masaüstü/Grayİmage.jpg")
+                        img_resized = img.resize((400,400))
+                        img = ImageTk.PhotoImage(img_resized)
+                        l1 = tk.Label(window,image=img)
+                        l1.place(x=100,y=175)
+                        
                 elif control ==2:
                         img = Image.open(imgname).convert("RGB")
                         img.save("C:/Users/Metehan/Masaüstü/RGBİmage.jpg")
+                        img_resized = img.resize((400,400))
+                        img = ImageTk.PhotoImage(img_resized)
+                        l1 = tk.Label(window,image=img)
+                        l1.place(x=100,y=175)
+                        
                 elif control == 3:
                         img = Image.open(imgname)
                         img = img.filter(ImageFilter.BoxBlur(3))
                         img.save("C:/Users/Metehan/Masaüstü/Blurİmage.jpg")
+                        img_resized = img.resize((400,400))
+                        img = ImageTk.PhotoImage(img_resized)
+                        l1 = tk.Label(window,image=img)
+                        l1.place(x=100,y=175)
+                        
                 elif control == 4:
                         img = Image.open(imgname)
                         img = img.filter(CONTOUR)
                         img.save("C:/Users/Metehan/Masaüstü/Contourİmage.jpg")
+                        img_resized = img.resize((400,400))
+                        img = ImageTk.PhotoImage(img_resized)
+                        l1 = tk.Label(window,image=img)
+                        l1.place(x=100,y=175)
+                        
                 elif control == 5:
                         img = Image.open(imgname)
                         img = img.filter(EMBOSS)
                         img.save("C:/Users/Metehan/Masaüstü/Embossİmage.jpg")
+                        img_resized = img.resize((400,400))
+                        img = ImageTk.PhotoImage(img_resized)
+                        l1 = tk.Label(window,image=img)
+                        l1.place(x=100,y=175)
+                        
                 elif control == 6:
                         img = Image.open(imgname)
                         img = img.filter(SHARPEN)
                         img.save("C:/Users/Metehan/Masaüstü/Sharpenİmage.jpg")
+                        img_resized = img.resize((400,400))
+                        img = ImageTk.PhotoImage(img_resized)
+                        l1 = tk.Label(window,image=img)
+                        l1.place(x=100,y=175)
+                        
                 elif control == 7:
                         img = Image.open(imgname)
                         img = img.filter(DETAIL)
                         img.save("C:/Users/Metehan/Masaüstü/Detailİmage.jpg")
+                        img_resized = img.resize((400,400))
+                        img = ImageTk.PhotoImage(img_resized)
+                        l1 = tk.Label(window,image=img)
+                        l1.place(x=100,y=175)
+                        
                 elif control == 8:
                         img = Image.open(imgname)
                         img = img.filter(EDGE_ENHANCE_MORE)
                         img.save("C:/Users/Metehan/Masaüstü/Detailİmage.jpg")
+                        img_resized = img.resize((400,400))
+                        img = ImageTk.PhotoImage(img_resized)
+                        l1 = tk.Label(window,image=img)
+                        l1.place(x=100,y=175)
+                        
                 else:
                         img = Image.open(imgname)
                         img.save("C:/Users/Metehan/Masaüstü/İmage.jpg")
+                        img_resized = img.resize((400,400))
+                        img = ImageTk.PhotoImage(img_resized)
+                        l1 = tk.Label(window,image=img)
+                        l1.place(x=100,y=175)
+                        
         
-
 window.mainloop()
